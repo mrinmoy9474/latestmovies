@@ -1,34 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Movies</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyMovieStream</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header class="site-header">
     <div class="brand">MyMovieStream</div>
-
-    <!-- Banner ad container -->
-    <div id="header-ad" class="header-ad" aria-hidden="true"></div>
+    <div id="header-ad" class="header-ad"></div>
   </header>
+
+  <!-- ✅ Native Ad Moved Here (Top of Page) -->
+  <div id="native-ad-wrapper" class="native-ad-wrapper"></div>
 
   <main class="main">
     <section class="controls">
-      <input id="search" type="search" placeholder="Search movies..." />
+      <input id="search" type="search" placeholder="Search movies...">
     </section>
 
-    <section id="movies-grid" class="movies-grid" aria-live="polite">
-      <!-- movie cards injected here -->
-    </section>
-
-    <!-- Native ad container (script will create inner content) -->
-    <div id="native-ad-wrapper" class="native-ad-wrapper" aria-hidden="true"></div>
+    <section id="movies-grid" class="movies-grid"></section>
   </main>
 
   <footer class="site-footer">
-    <small>© <span id="year"></span> MyMovieStream — movies listed from JSON</small>
+    <small>© <span id="year"></span> MyMovieStream</small>
   </footer>
 
   <script src="main.js" defer></script>
