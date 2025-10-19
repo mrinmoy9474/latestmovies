@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": "m001",
+      "title": "The Adventure Begins",
+      "description": "A curious group set off on an epic journey.",
+      "thumbnail": "https://via.placeholder.com/640x360.png?text=Adventure+Thumb",
+      "year": "2023",
+      "tags": ["adventure", "action"],
+      "link": "https://example.com/play/adventure" 
+    },
+    {
+      "id": "m002",
+      "title": "Romance In Rain",
+      "description": "A touching romantic drama set in a rainy city.",
+      "thumbnail": "https://via.placeholder.com/640x360.png?text=Romance+Thumb",
+      "year": "2022",
+      "tags": ["romance", "drama"],
+      "link": "https://example.com/play/romance"
+    }
+  ],
+
+  "ads": {
+    "banner": {
+      "inline": "atOptions = { 'key' : '48d5b7b121b34aba54a436b8caa0621b', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };",
+      "src": "//www.highperformanceformat.com/48d5b7b121b34aba54a436b8caa0621b/invoke.js",
+      "placeholderHTML": "<div style='display:flex;align-items:center;justify-content:center;min-height:60px;'><!-- banner placeholder --></div>"
+    },
+
+    "popunder": {
+      "src": "//pl27885560.effectivegatecpm.com/ed/09/f2/ed09f2d77626917b12cdd2382e3a0a58.js"
+    },
+
+    "native": {
+      "src": "//pl27884010.effectivegatecpm.com/a39e7461ca1bff2d0182cf39e690c516/invoke.js",
+      "containerId": "container-a39e7461ca1bff2d0182cf39e690c516"
+    }
+  }
+}
