@@ -93,7 +93,7 @@ body{
   display:flex;
   flex-direction:column;
   gap:8px;
-  min-height:80px;
+  min-height:110px;
 }
 .movie-title{
   font-weight:600;
