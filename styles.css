@@ -19,10 +19,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   position: sticky;
   top: 0;
   z-index: 50;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -34,15 +35,19 @@ body {
   width: 468px;
   max-width: 100%;
   min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
 }
 
-/* ✅ Native banner styling at top */
+/* ✅ Native banner styling */
 .native-ad-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 12px 0;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .controls {
@@ -58,9 +63,21 @@ body {
   border: none;
 }
 
+/* ✅ Ad banner boxes between sections */
+.mid-banner,
+.bottom-banner,
+.footer-ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.03);
+  margin: 10px 0;
+}
+
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
   padding: 20px;
 }
@@ -71,11 +88,12 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .thumb {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
@@ -98,11 +116,20 @@ body {
   text-align: center;
 }
 
-.btn-play { background: var(--accent); color: black; }
-.btn-info { background: transparent; border: 1px solid white; color: white; }
+.btn-play {
+  background: var(--accent);
+  color: black;
+}
+
+.btn-info {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
 
 .site-footer {
   text-align: center;
   padding: 15px;
   color: var(--muted);
+  background: rgba(255, 255, 255, 0.05);
 }
